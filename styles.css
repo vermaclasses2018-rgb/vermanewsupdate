@@ -1,0 +1,285 @@
+/* Custom CSS for VERMA NEWS */
+
+/* Loading Spinner */
+.loading-spinner {
+  border: 4px solid #f3f3f3;
+  border-top: 4px solid #3b82f6;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Notification Bar */
+.notification-bar {
+  background: linear-gradient(135deg, #ff6b6b, #ee5a6f);
+  color: white;
+  padding: 12px 0;
+  text-align: center;
+  font-weight: 600;
+  animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.85; }
+}
+
+/* Header Top */
+.header-top {
+  background-color: #1e3a8a;
+  color: white;
+  padding: 8px 0;
+  font-size: 0.875rem;
+}
+
+/* Main Header */
+.main-header {
+  background: linear-gradient(135deg, #1e40af, #3b82f6);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.logo-text {
+  font-size: 2rem;
+  font-weight: 900;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.nav-link {
+  transition: all 0.3s ease;
+  font-weight: 600;
+}
+
+.nav-link:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  transform: translateY(-2px);
+}
+
+/* Marquee */
+.marquee-container {
+  background-color: #fef3c7;
+  padding: 12px 0;
+  overflow: hidden;
+  border-top: 2px solid #f59e0b;
+  border-bottom: 2px solid #f59e0b;
+}
+
+.marquee-content {
+  display: flex;
+  animation: marquee 30s linear infinite;
+  white-space: nowrap;
+}
+
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+/* Cards */
+.news-card {
+  background: white;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  border-left: 4px solid #3b82f6;
+}
+
+.news-card:hover {
+  transform: translateY(-5px);
+  border-left-color: #1e40af;
+}
+
+.job-card {
+  border-left-color: #10b981;
+}
+
+.job-card:hover {
+  border-left-color: #059669;
+}
+
+.result-card {
+  border-left-color: #f59e0b;
+}
+
+.result-card:hover {
+  border-left-color: #d97706;
+}
+
+.answer-key-card {
+  border-left-color: #ef4444;
+}
+
+.answer-key-card:hover {
+  border-left-color: #dc2626;
+}
+
+/* Badges */
+.badge-new {
+  background: linear-gradient(135deg, #ef4444, #dc2626);
+  animation: blink 1.5s ease-in-out infinite;
+}
+
+.badge-hot {
+  background: linear-gradient(135deg, #f59e0b, #d97706);
+  animation: blink 1.5s ease-in-out infinite;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.7; }
+}
+
+/* Buttons */
+.btn-primary {
+  background: linear-gradient(135deg, #3b82f6, #2563eb);
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  background: linear-gradient(135deg, #2563eb, #1d4ed8);
+  transform: scale(1.05);
+}
+
+.btn-apply {
+  background: linear-gradient(135deg, #10b981, #059669);
+}
+
+.btn-apply:hover {
+  background: linear-gradient(135deg, #059669, #047857);
+  transform: scale(1.05);
+}
+
+/* Advertisement */
+.ad-container {
+  background: linear-gradient(135deg, #f3f4f6, #e5e7eb);
+  border: 2px dashed #d1d5db;
+  padding: 60px 20px;
+  min-height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Footer */
+.footer {
+  background: linear-gradient(135deg, #1e293b, #0f172a);
+  color: white;
+}
+
+/* Admin Styles */
+.admin-sidebar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 260px;
+  background: linear-gradient(180deg, #1e40af, #1e3a8a);
+  overflow-y: auto;
+  z-index: 1000;
+}
+
+.admin-content {
+  margin-left: 260px;
+  padding: 2rem;
+  min-height: 100vh;
+  background-color: #f3f4f6;
+}
+
+.admin-card {
+  background: white;
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.form-input {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #d1d5db;
+  border-radius: 0.5rem;
+  transition: all 0.3s ease;
+}
+
+.form-input:focus {
+  outline: none;
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+.file-upload-area {
+  border: 2px dashed #d1d5db;
+  border-radius: 0.5rem;
+  padding: 2rem;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background-color: #f9fafb;
+}
+
+.file-upload-area:hover {
+  border-color: #3b82f6;
+  background-color: #eff6ff;
+}
+
+.file-upload-area.drag-over {
+  border-color: #3b82f6;
+  background-color: #dbeafe;
+}
+
+/* Eligibility Table */
+.eligibility-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.eligibility-table thead {
+  background: linear-gradient(135deg, #3b82f6, #2563eb);
+  color: white;
+}
+
+.eligibility-table th,
+.eligibility-table td {
+  padding: 1rem;
+  text-align: left;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.eligibility-table tbody tr:hover {
+  background-color: #f3f4f6;
+}
+
+/* Line Clamp */
+.line-clamp-2 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .admin-sidebar {
+    width: 100%;
+    position: relative;
+  }
+  
+  .admin-content {
+    margin-left: 0;
+  }
+  
+  .logo-text {
+    font-size: 1.5rem;
+  }
+  
+  .marquee-content {
+    animation-duration: 20s;
+  }
+}
